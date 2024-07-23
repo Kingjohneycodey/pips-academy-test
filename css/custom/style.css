@@ -468,7 +468,7 @@ a {
     padding-top: 180px;
 }
 .static-header-bg {
-    background-image: url("../../images/background.jpg");
+    background-image: url("../../images/background2.jpg");
 }
 .static-head .header-div-1 h1 span {
 	color: #ffffff;
@@ -1350,7 +1350,7 @@ a {
 
 
 .testimonial-bgimage {
-    background-image: url("../../images/1920x800x1.jpg");
+    background-image: url("../../images/background3.jpg");
 }
 .testimonial-bg-padding {
     padding-bottom: 0px;
@@ -1763,10 +1763,10 @@ only screen and (min-resolution: 1.5dppx) {
 		background-image: url("../../images/1920x700x1%402x.jpg");
 	}
 	.testimonial-bgimage {
-		background-image: url("../../images/1920x800x1%402x.jpg");
+		background-image: url("../../images/background4.jpg");
 	}
 	.cta-bgimage {
-		background-image: url("../../images/1920x700x2%402x.jpg");
+		background-image: url("../../images/background3.jpg");
 	}
 }
 
