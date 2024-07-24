@@ -1350,7 +1350,7 @@ a {
 
 
 .testimonial-bgimage {
-    background-image: url("../../images/background3.jpg");
+    /* background-image: url("../../images/background3.jpg"); */
 }
 .testimonial-bg-padding {
     padding-bottom: 0px;
@@ -1762,9 +1762,9 @@ only screen and (min-resolution: 1.5dppx) {
 	.counter-bgimage {
 		background-image: url("../../images/1920x700x1%402x.jpg");
 	}
-	.testimonial-bgimage {
+	/* .testimonial-bgimage {
 		background-image: url("../../images/background4.jpg");
-	}
+	} */
 	.cta-bgimage {
 		background-image: url("../../images/background3.jpg");
 	}
