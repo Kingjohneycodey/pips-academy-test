@@ -1962,7 +1962,7 @@ only screen and (min-resolution: 1.5dppx) {
 	.res-services-center {
 		float: none;
 		margin: 0 auto;
-		width: 360px !important;
+		/* width: 360px !important; */
 	}
 	
 }
@@ -1995,7 +1995,7 @@ only screen and (min-resolution: 1.5dppx) {
 	.res-col-center {
 		float: none;
 		margin: 0 auto;
-		width: 360px !important;
+		/* width: 360px !important; */
 	}
 	.subscribe-row {
 		width: 100%;
@@ -2064,7 +2064,7 @@ only screen and (min-resolution: 1.5dppx) {
 	.res-col-center {
 		margin-left: auto;
 		margin-right: auto;
-		width: 360px;
+		/* width: 360px; */
 	}
 	.slider1-padding {
 		padding-bottom: 150px;
@@ -2181,3 +2181,17 @@ only screen and (min-resolution: 1.5dppx) {
 	}
 }
 /*========================================== 19.MEDIA QUERIES END ===========================================*/
+
+
+/* custom */
+
+ul, ul li{
+	margin-left: 0 !important;
+	padding-left: 13px !important;
+}
+
+.services-card{
+	background-color: white; padding: 20px 30px; margin-right: 8%;
+}
+
+
