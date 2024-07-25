@@ -464,6 +464,7 @@ a {
 
 .header-bg{
 	margin-top: 90px;
+	
 }
 
 
@@ -474,6 +475,7 @@ a {
 }
 .static-header-bg {
     background-image: url("../../images/background2.jpg");
+	min-height: 90vh;
 }
 .static-head .header-div-1 h1 span {
 	color: #ffffff;
