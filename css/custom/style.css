@@ -462,6 +462,11 @@ a {
 
 /*========================================== 5.HEADER START ===========================================*/
 
+.header-bg{
+	margin-top: 90px;
+}
+
+
 /*STATIC*/
 .static-padding {
     padding-bottom: 180px;
