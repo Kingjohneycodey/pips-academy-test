@@ -2194,4 +2194,12 @@ ul, ul li{
 	background-color: white; padding: 20px 30px; margin-right: 8%;
 }
 
+@media screen and (max-width: 600px) {
+	.author-image{
+		width: 80%;
+		margin: auto;
+		display: block;
+	}
+}
+
 
