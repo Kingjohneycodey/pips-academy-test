@@ -53,6 +53,18 @@
     />
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" type="text/css" href="css/custom/style.css" />
+
+
+    <style>
+      .more-content {
+            display: none;
+        }
+        .read-more-btn {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+    </style>
   </head>
   <body
     data-spy="scroll"
@@ -165,7 +177,8 @@
 
 			  </p><br>
 
-        <b>Why join the Pips Community?</b>
+        <div class="more-content" id="more-content1">
+          <b>Why join the Pips Community?</b>
 			  <p class="content-top-space">
           1. Learn from Experts: Gain access to a diverse group of forex experts who have years of experience in the industry. Our community members are passionate about sharing their knowledge and helping others succeed. Learn from their mistakes, adopt their strategies, and accelerate your trading journey.
 			  </p>
@@ -185,48 +198,9 @@
         <p class="content-top-space">
           5. Trade with Confidence: Gain access to our proven trading strategies and signals. Our experts carefully analyze the market, identifying high-probability trading opportunities. By following our signals, you can trade with confidence, knowing that you have a team of professionals guiding your decisions.
 			  </p>
+        </div>
 	
-			  <!-- <div class="about-points content-top-space1 distab">
-				<div class="distab-cell-middle">
-				  <div class="distab-cell-middle list-img">
-					<img
-					  src="images/32x32x1.png"
-					  alt="icon"
-					  data-at2x="images/32x32x1@2x.png"
-					/>
-				  </div>
-				  <div class="distab-cell-middle list-content">
-					<p><a href="#">ANALYZE</a></p>
-	
-				  </div>
-				</div>
-				<div class="distab-cell-middle abt-pad-left25">
-				  <div class="distab-cell-middle list-img">
-					<img
-					  src="images/32x32x2.png"
-					  alt="icon"
-					  data-at2x="images/32x32x2@2x.png"
-					/>
-				  </div>
-				  <div class="distab-cell-middle list-content">
-					<p><a href="#">MANAGE</a></p>
-		
-				  </div>
-				</div>
-				<div class="distab-cell-middle abt-pad-left25">
-				  <div class="distab-cell-middle list-img">
-					<img
-					  src="images/32x32x3.png"
-					  alt="icon"
-					  data-at2x="images/32x32x3@2x.png"
-					/>
-				  </div>
-				  <div class="distab-cell-middle list-content">
-					<p><a href="#">PROMOTION</a></p>
-
-				  </div>
-				</div>
-			  </div> -->
+        <span id="readMoreBtn1" class="read-more-btn">Read More</span>
 			</div>
 		  </div>
 		  
@@ -466,6 +440,7 @@
                 Our dedication lies in the relentless pursuit of excellence, continually updating our curriculum to reflect the latest market trends and trading strategies. We are devoted to empowering our members with the knowledge and skills necessary to navigate the complexities of forex trading confidently.
 
               </p>
+              <div class="more-content" id="more-content2">
 
               <p class="content-top-space1">
                 Support is at the heart of everything we do. We offer personalized mentorship, responsive customer service, and a collaborative environment where traders can exchange ideas and insights. Whether you're a novice or an experienced trader, we are here to provide the guidance and encouragement you need to succeed.
@@ -479,6 +454,9 @@
               <p class="content-top-space1">
                 At Pips Forex Academy, our vision is not just about individual success but about cultivating a supportive ecosystem where every trader can thrive. Join us in shaping the future of forex trading, one pip at a time.”
               </p>
+            </div>
+
+              <span id="readMoreBtn2" class="read-more-btn">Read More</span>
          
             </div>
           </div>
@@ -503,6 +481,8 @@
 
               </p>
 
+              <div class="more-content" id="more-content3">
+
               <p class="content-top-space1">
                 When it comes to performance, we set the bar high. Our cutting-edge strategies and in-depth market analysis are designed to deliver consistent results. Whether you're aiming for growth, stability, or diversification, our approach is tailored to help you achieve your financial goals with precision and reliability.
 
@@ -512,6 +492,10 @@
                 At Pips Forex Academy, success is not just a goal; it's a reality we create together. Join us and experience the difference as we chart a course towards financial independence and trading excellence. Together, we'll turn your aspirations into achievements, one successful trade at a time.”
 
               </p>
+
+            </div>
+
+              <span id="readMoreBtn3" class="read-more-btn">Read More</span>
 
             </div>
           </div>
@@ -1266,6 +1250,45 @@
       </div>
     </section>
     <!--================================= FOOTER END =============================================-->
+
+
+    <script>
+      document.getElementById('readMoreBtn1').addEventListener('click', function() {
+          var moreContent1 = document.getElementById('more-content1');
+          var readMoreBtn1 = document.getElementById('readMoreBtn1');
+          if (moreContent1.style.display === 'none' || moreContent1.style.display === '') {
+              moreContent1.style.display = 'block';
+              readMoreBtn1.textContent = 'Read Less';
+          } else {
+              moreContent1.style.display = 'none';
+              readMoreBtn1.textContent = 'Read More';
+          }
+      });
+
+      document.getElementById('readMoreBtn2').addEventListener('click', function() {
+          var moreContent2 = document.getElementById('more-content2');
+          var readMoreBtn2 = document.getElementById('readMoreBtn2');
+          if (moreContent2.style.display === 'none' || moreContent2.style.display === '') {
+              moreContent2.style.display = 'block';
+              readMoreBtn2.textContent = 'Read Less';
+          } else {
+              moreContent2.style.display = 'none';
+              readMoreBtn2.textContent = 'Read More';
+          }
+      });
+
+      document.getElementById('readMoreBtn3').addEventListener('click', function() {
+          var moreContent3 = document.getElementById('more-content3');
+          var readMoreBtn3 = document.getElementById('readMoreBtn3');
+          if (moreContent3.style.display === 'none' || moreContent3.style.display === '') {
+              moreContent3.style.display = 'block';
+              readMoreBtn3.textContent = 'Read Less';
+          } else {
+              moreContent3.style.display = 'none';
+              readMoreBtn3.textContent = 'Read More';
+          }
+      });
+  </script>
 
     <!-- JQUERY LIBRARY -->
     <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
