@@ -557,7 +557,7 @@
                 <p>- Trade journal</p>
               </div>
               <div class="text-center btn-top-space">
-                <a href="#" class="btn btn-1">Book Now</a>
+                <a href="https://t.me/pipsgod" class="btn btn-1">Book Now</a>
               </div>
             </div>
           </div>
@@ -584,7 +584,7 @@
                 <p>- Trade journal</p>
               </div>
               <div class="text-center btn-top-space">
-                <a href="#" class="btn btn-2">Book Now</a>
+                <a href="https://t.me/pipsgod" class="btn btn-2">Book Now</a>
               </div>
             </div>
           </div>
@@ -607,7 +607,7 @@
          
               </div>
               <div class="text-center btn-top-space">
-                <a href="#" class="btn btn-1">Book Now</a>
+                <a href="https://t.me/pipsgod" class="btn btn-1">Book Now</a>
               </div>
             </div>
           </div>
@@ -996,77 +996,61 @@
               <div class="contact-form-head text-center">
                 <h3>SEND A MESSAGE</h3>
               </div>
-              <form action="#" class="contact-form" method="post">
+              <form id="contactForm" class="contact-form">
                 <div class="form-div form-div-left">
-                  <input
-                    class="form-input"
-                    type="text"
-                    name="name"
-                    value=""
-                    placeholder="Enter Your Name"
-                    required
-                    autocomplete="off"
-                  />
+                    <input class="form-input" type="text" name="name" placeholder="Enter Your Name" required autocomplete="off"/>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 no-pad">
-                  <div class="row rowsafari">
-                    <div
-                      class="col-sm-12 col-md-12 col-lg-6 form-pad-right25 clearfix"
-                    >
-                      <div class="form-div clearfix">
-                        <input
-                          class="number-css form-input"
-                          type="text"
-                          name="phone"
-                          value=""
-                          placeholder="Enter Your Number"
-                          required
-                          autocomplete="off"
-                          onkeypress="return isNumber(event)"
-                        />
-                      </div>
+                    <div class="row rowsafari">
+                        <div class="col-sm-12 col-md-12 col-lg-6 form-pad-right25 clearfix">
+                            <div class="form-div clearfix">
+                                <input class="number-css form-input" type="text" name="phone" placeholder="Enter Your Number" required autocomplete="off" onkeypress="return isNumber(event)"/>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-6 form-pad-left25 clearfix">
+                            <div class="form-div clearfix">
+                                <input class="form-input" type="email" name="email" placeholder="Enter Your Email" required autocomplete="off"/>
+                            </div>
+                        </div>
                     </div>
-                    <div
-                      class="col-sm-12 col-md-12 col-lg-6 form-pad-left25 clearfix"
-                    >
-                      <div class="form-div clearfix">
-                        <input
-                          class="form-input"
-                          type="email"
-                          name="email"
-                          value=""
-                          placeholder="Enter Your Email"
-                          required
-                          autocomplete="off"
-                        />
-                      </div>
+                    <div class="form-div">
+                        <textarea class="form-textarea" name="message" placeholder="Please Enter Message" cols="40" rows="5" required autocomplete="off"></textarea>
                     </div>
-                  </div>
-                  <div class="form-div">
-                    <textarea
-                      class="form-textarea"
-                      name="message"
-                      placeholder="Please Enter Message"
-                      cols="40"
-                      rows="5"
-                      required
-                      autocomplete="off"
-                    ></textarea>
-                  </div>
-                  <div class="form-btn button text-center">
-                    <button class="btn btn-1" type="submit">Submit</button>
-                  </div>
-                  <div class="messageDiv">
-                    <span class="sucessMessage"> </span>
-                    <span class="failMessage"> </span>
-                  </div>
+                    <div class="form-btn button text-center">
+                        <button class="btn btn-1" type="submit">Submit</button>
+                    </div>
+                    <div class="messageDiv">
+                        <span class="successMessage"></span>
+                        <span class="failMessage"></span>
+                    </div>
                 </div>
-              </form>
+            </form>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+          var name = document.querySelector('input[name="name"]').value;
+          var phone = document.querySelector('input[name="phone"]').value;
+          var email = document.querySelector('input[name="email"]').value;
+          var message = document.querySelector('textarea[name="message"]').value;
+
+          var mailtoLink = `mailto:your-email@example.com?subject=Contact Form Submission&body=Name: ${encodeURIComponent(name)}%0D%0APhone: ${encodeURIComponent(phone)}%0D%0AEmail: ${encodeURIComponent(email)}%0D%0AMessage: ${encodeURIComponent(message)}`;
+          window.location.href = mailtoLink;
+      });
+
+      function isNumber(event) {
+          var charCode = event.which ? event.which : event.keyCode;
+          if (charCode < 48 || charCode > 57) {
+              return false;
+          }
+          return true;
+      }
+  </script>
     <!--================================= CONTACT FORM ENDS ============================================-->
 
     <!--================================= CTA START ==========================================-->
@@ -1086,7 +1070,7 @@
                 your financial goals!
               </p>
               <div class="btn-top-space">
-                <a href="#" class="btn btn-1">Sign up for VIP mentorship</a>
+                <a href="https://t.me/pipsgod" class="btn btn-1">Sign up for VIP mentorship</a>
               </div>
             </div>
           </div>
@@ -1131,7 +1115,7 @@
                   </li>
 
                   <li>
-                    <a href="https://t.me/pipsgod">
+                    <a href="https://t.me/+cy_1rAzSjtBjMDZk">
                       <img
                         src="images/telegram.png"
                         alt="icon"
@@ -1208,14 +1192,14 @@
             <div class="subscribe-section">
               <div id="mc_embed_signup">
                 <!--================= YOUR MAILCHIMP ACCOUNT URL HERE ====================-->
-                <form
-                  action="http://keenicon.us11.list-manage.com/subscribe/post?u=e479edaf1c9c3d2aa4e927ed8&amp;id=07753442c3"
+                <!-- <form
+                  action="https://t.me/pipsgod"         
                   method="post"
                   id="mc-embedded-subscribe-form"
                   name="mc-embedded-subscribe-form"
                   class="validate"
                   novalidate
-                >
+                > -->
                   <div class="row subscribe-row">
                     <!--================= EMAIL INPUT BOX HERE ====================-->
                     <div class="form2-div col-sm-12 col-md-12">
@@ -1231,13 +1215,17 @@
                     <!--================= SUBSCRIBE BUTTON HERE ====================-->
                     <div class="col-sm-12 col-md-12 btn-top-space">
                       <div class="center">
-                        <input
+
+                        <a href="https://t.me/pipsgod">
+                          <input
                           type="submit"
                           id="mc-embedded-subscribe"
                           class="btn btn-1"
                           name="submit"
                           value="Subscribe"
                         />
+                        </a>
+                       
                       </div>
                     </div>
                     <!--================= SUCCESS AND FAILURE MESSAGE HERE =================-->
@@ -1266,7 +1254,7 @@
                       ></div>
                     </div>
                   </div>
-                </form>
+                <!-- </form> -->
               </div>
             </div>
           </div>
